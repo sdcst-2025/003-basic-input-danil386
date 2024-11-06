@@ -16,3 +16,15 @@
 # r = 3
 # h = 5
 # sa = 83.2297607912
+
+h = input("What is your cone's height?")
+r = input("What is your cone's radius?")
+
+h = float(h)
+r = float(r)
+
+import math
+sa = (math.pi * r)*(r + (((h**2)+(r**2))**0.5))
+sa = str(sa)
+
+print("Your cone's surface are is " + sa)
